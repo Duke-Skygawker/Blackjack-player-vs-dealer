@@ -8,6 +8,10 @@ body {
   text-align: center;
   font-size: 28px;
 }
+main {
+  max-width: 768px;
+  margin: auto;
+}
 
 h1 {
   color: goldenrod;
@@ -33,4 +37,20 @@ button {
   border-radius: 2px;
   margin-bottom: 2px;
   margin-top: 5px;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  border: 2px solid red;
+  filter: brightness(120%);
+}
+
+.scoreboard p:hover {
+  border-left: 7px solid goldenrod;
+  border-right: 7px solid goldenrod;
 }

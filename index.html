@@ -7,19 +7,22 @@
     <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
   <body>
-    <h1>Blackjack</h1>
-    <p id="message-el">Want to play a round?</p>
-    <p>Dealer Cards: <span id="dealer-cards-el"></span></p>
-    <p>Dealer Sum: <span id="dealer-sum-el"></span></p>
-    <p>Player Cards: <span id="cards-el"></span></p>
-    <p>Player Sum: <span id="sum-el"></span></p>
-    <div class="card-container">
-      <button onclick="startGame()">START GAME</button>
-      <button onclick="newCard()">NEW CARD</button>
-      <button onclick="endGame()">STAY</button>
-      <button onclick="gameReset()">RESET</button>
-    </div>
-    <p id="player-el"></p>
-    <script src="index.js"></script>
+    <main>
+      <h1>Blackjack</h1>
+      <p id="message-el">Want to play a round?</p>
+      <div class="scoreboard">
+        <p>Dealer Cards: <span id="dealer-cards-el"></span></p>
+        <p>Dealer Sum: <span id="dealer-sum-el"></span></p>
+        <p>Player Cards: <span id="cards-el"></span></p>
+        <p>Player Sum: <span id="sum-el"></span></p>
+      </div>
+      <div class="card-container">
+        <button onclick="startGame()">START GAME</button>
+        <button onclick="newCard()">NEW CARD</button>
+        <button onclick="endGame()">STAY</button>
+        <button onclick="gameReset()">RESET</button>
+      </div>
+      <script src="index.js"></script>
+    </main>
   </body>
 </html>
